@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/page1.dart';
 
+// ignore: camel_case_types
 class page_2 extends StatelessWidget {
-  const page_2({Key? key}) : super(key: key);
+  page_2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,65 +14,62 @@ class page_2 extends StatelessWidget {
         elevation: 0.0,
         backgroundColor: Colors.transparent,
         leading: IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back_ios_new,
               color: Colors.black,
             ),
-            onPressed: () {
-              page_1();
-            }),
+            onPressed: () => page_1()),
       ),
-      body: Container(
-        child: Column(
-          children: [
-            Image.asset('assets/Rectangle 276.png'),
-            Padding(padding: EdgeInsets.all(10)),
-            Text(
-              "Name",
-              style: TextStyle(
-                fontSize: 25,
-                fontWeight: FontWeight.bold,
-              ),
+      body: Column(
+        children: [
+          Image.asset('assets/Rectangle 276.png'),
+          const Padding(padding: EdgeInsets.all(10)),
+          const Text(
+            "Name",
+            style: TextStyle(
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
             ),
-            Padding(padding: EdgeInsets.all(10)),
-            Text(
-              "Habits together",
-              style: TextStyle(
-                fontSize: 20,
-              ),
+          ),
+          const Padding(padding: EdgeInsets.all(10)),
+          const Text(
+            "Habits together",
+            style: TextStyle(
+              fontSize: 20,
             ),
-            Padding(padding: EdgeInsets.all(10)),
-            Text(
-              "Meditate",
-              style: TextStyle(
-                fontSize: 20,
-              ),
+          ),
+          const Padding(padding: EdgeInsets.all(10)),
+          const Text(
+            "Meditate",
+            style: TextStyle(
+              fontSize: 20,
             ),
-            Padding(padding: EdgeInsets.all(10)),
-            Text(
-              "Read",
-              style: TextStyle(
-                fontSize: 20,
-              ),
+          ),
+          const Padding(padding: EdgeInsets.all(10)),
+          const Text(
+            "Read",
+            style: TextStyle(
+              fontSize: 20,
             ),
-            Padding(padding: EdgeInsets.all(10)),
-            Text(
-              "Workout",
-              style: TextStyle(
-                fontSize: 20,
-              ),
+          ),
+          const Padding(padding: EdgeInsets.all(10)),
+          const Text(
+            "Workout",
+            style: TextStyle(
+              fontSize: 20,
             ),
-            Padding(padding: EdgeInsets.all(50)),
-            TextButton(
-              child: Text("Remind"),
-              style: TextButton.styleFrom(
-                  primary: Colors.white, //Text Color
-                  backgroundColor: Colors.red //Button Background Color
-                  ),
-              onPressed: () {},
-            ),
-          ],
-        ),
+          ),
+          const Padding(padding: EdgeInsets.all(50)),
+          TextButton(
+            // ignore: sort_child_properties_last
+            child: const Text("Remind"),
+            style: TextButton.styleFrom(
+                primary: Colors.white, //Text Color
+                backgroundColor: Colors.red //Button Background Color
+                ),
+            onPressed: () {},
+          ),
+        ],
       ),
     ));
   }
